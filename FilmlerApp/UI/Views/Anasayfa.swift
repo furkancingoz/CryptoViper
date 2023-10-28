@@ -56,7 +56,9 @@ class Anasayfa: UIViewController {
 
 }
 
-extension Anasayfa : UICollectionViewDelegate, UICollectionViewDataSource{
+
+//Anasayafya collection view delegate ve data source,hücre protokolü ekledik önemli!!!
+extension Anasayfa : UICollectionViewDelegate, UICollectionViewDataSource, HucreProtocol{
     //collection viewimizin içerisine filmler listesin elemanları kadar ekranda cell göstermesini söylüyoruz
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return filmlerListesi.count
@@ -74,21 +76,32 @@ extension Anasayfa : UICollectionViewDelegate, UICollectionViewDataSource{
         hucre.layer.borderWidth = 0.5
         hucre.layer.cornerRadius = 10
         
+        //protokole yetki verme
+        hucre.hucreProtocol = self
+        hucre.indexPath = indexPath
+        
         return hucre
     }
     
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let film = filmlerListesi[indexPath.row]
-        print("\(film.ad!) seçildi")
         performSegue(withIdentifier: "toDetayVC", sender: film)
     }
     
+    //filtreleme yapıyoruz hangi sayafaya göndericeğimizi burda belirtiyoruz
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetayVC" {
-            if let film = sender as? Filmler {
+            if let film = sender as? Filmler { //senderı downcastingle filmler nesnesine dönüştürüyoruz
                 let gidilecekVC = segue.destination as! DetaySayfa
                 gidilecekVC.film = film
             }
         }
+    }
+    
+    //protokolü kullanıyoruz
+    func sepeteEkleTikla(indexPath: IndexPath) {
+        let film = filmlerListesi[indexPath.row]
+        print("\(film.ad!) sepetlendi")
     }
 }
