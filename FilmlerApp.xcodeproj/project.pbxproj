@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		65ACD4B12AECF4E8008B4886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACD4B02AECF4E8008B4886 /* AppDelegate.swift */; };
 		65ACD4B32AECF4E8008B4886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACD4B22AECF4E8008B4886 /* SceneDelegate.swift */; };
-		65ACD4B52AECF4E8008B4886 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACD4B42AECF4E8008B4886 /* ViewController.swift */; };
+		65ACD4B52AECF4E8008B4886 /* Anasayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACD4B42AECF4E8008B4886 /* Anasayfa.swift */; };
 		65ACD4B82AECF4E8008B4886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ACD4B62AECF4E8008B4886 /* Main.storyboard */; };
 		65ACD4BA2AECF4EA008B4886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ACD4B92AECF4EA008B4886 /* Assets.xcassets */; };
 		65ACD4BD2AECF4EA008B4886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ACD4BB2AECF4EA008B4886 /* LaunchScreen.storyboard */; };
+		65ACD4CA2AECF5AE008B4886 /* Filmler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACD4C92AECF5AE008B4886 /* Filmler.swift */; };
+		65ACD4CC2AECF64A008B4886 /* DetaySayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACD4CB2AECF64A008B4886 /* DetaySayfa.swift */; };
+		65ACD4CE2AECF78D008B4886 /* FilmlerHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACD4CD2AECF78D008B4886 /* FilmlerHucre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		65ACD4AD2AECF4E8008B4886 /* FilmlerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmlerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65ACD4B02AECF4E8008B4886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65ACD4B22AECF4E8008B4886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65ACD4B42AECF4E8008B4886 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65ACD4B42AECF4E8008B4886 /* Anasayfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anasayfa.swift; sourceTree = "<group>"; };
 		65ACD4B72AECF4E8008B4886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65ACD4B92AECF4EA008B4886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65ACD4BC2AECF4EA008B4886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65ACD4BE2AECF4EA008B4886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65ACD4C92AECF5AE008B4886 /* Filmler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filmler.swift; sourceTree = "<group>"; };
+		65ACD4CB2AECF64A008B4886 /* DetaySayfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaySayfa.swift; sourceTree = "<group>"; };
+		65ACD4CD2AECF78D008B4886 /* FilmlerHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmlerHucre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,56 @@
 			children = (
 				65ACD4B02AECF4E8008B4886 /* AppDelegate.swift */,
 				65ACD4B22AECF4E8008B4886 /* SceneDelegate.swift */,
-				65ACD4B42AECF4E8008B4886 /* ViewController.swift */,
+				65ACD4C52AECF53A008B4886 /* UI */,
+				65ACD4C42AECF51F008B4886 /* Data */,
 				65ACD4B62AECF4E8008B4886 /* Main.storyboard */,
 				65ACD4B92AECF4EA008B4886 /* Assets.xcassets */,
 				65ACD4BB2AECF4EA008B4886 /* LaunchScreen.storyboard */,
 				65ACD4BE2AECF4EA008B4886 /* Info.plist */,
 			);
 			path = FilmlerApp;
+			sourceTree = "<group>";
+		};
+		65ACD4C42AECF51F008B4886 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				65ACD4C72AECF54C008B4886 /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		65ACD4C52AECF53A008B4886 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				65ACD4C82AECF560008B4886 /* Collection View */,
+				65ACD4C62AECF544008B4886 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		65ACD4C62AECF544008B4886 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65ACD4B42AECF4E8008B4886 /* Anasayfa.swift */,
+				65ACD4CB2AECF64A008B4886 /* DetaySayfa.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65ACD4C72AECF54C008B4886 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				65ACD4C92AECF5AE008B4886 /* Filmler.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		65ACD4C82AECF560008B4886 /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				65ACD4CD2AECF78D008B4886 /* FilmlerHucre.swift */,
+			);
+			path = "Collection View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65ACD4B52AECF4E8008B4886 /* ViewController.swift in Sources */,
+				65ACD4B52AECF4E8008B4886 /* Anasayfa.swift in Sources */,
 				65ACD4B12AECF4E8008B4886 /* AppDelegate.swift in Sources */,
 				65ACD4B32AECF4E8008B4886 /* SceneDelegate.swift in Sources */,
+				65ACD4CC2AECF64A008B4886 /* DetaySayfa.swift in Sources */,
+				65ACD4CA2AECF5AE008B4886 /* Filmler.swift in Sources */,
+				65ACD4CE2AECF78D008B4886 /* FilmlerHucre.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

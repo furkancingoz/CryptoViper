@@ -9,4 +9,9 @@ import UIKit
 
 class FilmlerHucre: UICollectionViewCell {
     
+    @IBOutlet weak var imageViewFilm: UIImageView!
+    @IBOutlet weak var labelFiyat: UILabel!
+
+    @IBAction func sepeteEkleButton(_ sender: Any) {
+    }
 }
